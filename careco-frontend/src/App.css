@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Assuming SubmitForm component has a class name 'submit-form' */
+.submit-form {
+  width: 90%; /* Set width to 70% */
+  /* max-width: 600px; Optional: Set a max-width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add some padding */
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: Background for visibility */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Alternatively, if you don't have a specific class in SubmitForm */
+/* .App-header { */
+  /* Existing styles */
+/* } */
+
+
+.App-header {
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
+}
+
+.App-header > * {
+  width: 70%; /* Applies to all direct children */
+  max-width: 600px; /* Optional: Set a max-width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
